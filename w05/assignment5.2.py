@@ -11,7 +11,7 @@ while True:
     except:
        # print "Please enter a number as input or \'done\'"
         print "Invalid input"
-        continue
+        break #without break program not terminated
     if smallest is None:
         smallest = num 
     if num > largest :
@@ -24,4 +24,5 @@ def done(largest,smallest):
     print "Minimum is", int(smallest)
 
 done(largest,smallest)
+
 
